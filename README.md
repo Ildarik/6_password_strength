@@ -1,6 +1,6 @@
 # Password Strength Calculator
 
-[TODO. There will be project description]
+For checking password strength type password and you get number from 1 to 10 where 1 is weak, 10 - strong.
 
 # Project Goals
 
