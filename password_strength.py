@@ -1,3 +1,4 @@
+import getpass
 import re
 
 def get_password_strength(password):
@@ -26,5 +27,5 @@ def get_password_strength(password):
 
 
 if __name__ == '__main__':
-    password = input("Please type password: ")
+    password = getpass.getpass(prompt="Please type password: ")
     print("Password strength: ", get_password_strength(password))
