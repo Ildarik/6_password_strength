@@ -10,19 +10,15 @@ def get_password_strength(password):
     
     if length_error:
     	return 1
-
-    if (digit_error and (uppercase_error or lowercase_error) and symbol_error):
+    elif lowercase_error:
     	return 2
-    
-    # if any 2 errors = False
-    if (digit_error + uppercase_error + lowercase_error + symbol_error == 2):
-    	return 5
-    
-    # if any 3 errors = False
-    if (digit_error + uppercase_error + lowercase_error + symbol_error == 1):
-        return 8	
-
-    if not(digit_error or uppercase_error or lowercase_error or symbol_error):
+    elif uppercase_error:
+    	return 4
+    elif digit_error:
+        return 6	
+    elif symbol_error:
+        return 8
+    else:
     	return 10
 
 
