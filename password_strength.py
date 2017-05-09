@@ -12,12 +12,12 @@ def get_password_strength(password):
     	return 1
     elif lowercase_error:
     	return 2
-    elif uppercase_error:
-    	return 4
     elif digit_error:
-        return 6	
+        return 4	
     elif symbol_error:
-        return 8
+        return 6
+    elif uppercase_error:
+    	return 8
     else:
     	return 10
 
